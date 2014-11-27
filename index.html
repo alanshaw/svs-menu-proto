@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html data-useragent="Mozilla/5.0 (Windows NT 6.1; WOW64; rv:33.0) Gecko/20100101 Firefox/33.0" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style="" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="Portfolios_files/css_002.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Portfolios</title>
+    <link type="image/x-icon" href="http://svs.mbasys.co.uk/trading/favicon.ico" rel="icon">
+    <link type="image/x-icon" href="http://svs.mbasys.co.uk/trading/favicon.ico" rel="shortcut icon">
+    <link href="Portfolios_files/css.css" rel="stylesheet">
+
+    <script src="Portfolios_files/modernizr"></script>
+
+
+    <script type="text/javascript">
+        window.servicePath = '/trading/';
+    </script>
+
+    <link href="menu.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+
+    
+<div class="navbar navbar-fixed-top hidden-xs" role="navigation" id="SiteNavigation">
+
+    
+<div class="container welcome" style="width: 100%">
+
+    <div class="container">
+        <div class=" row">
+            <div class="col-md-12">
+
+<div class="hidden-xs pull-right salutation">
+
+    <a onclick="window.setTimeout(function(){},0);" class="dropdown-toggle" data-toggle="dropdown">
+        <i class="fa fa-user"></i>
+        Hi, MR CHRISTOPHER TVR <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-left" role="menu">
+        <li><a href="http://svs.mbasys.co.uk/trading/Client" title="Personal Details">Personal Details</a></li>
+        <li><a href="http://svs.mbasys.co.uk/trading/Client/ChangePassword" title="Change Password">Change Password</a></li>
+        <li><a href="http://svs.mbasys.co.uk/trading/Client/ChangePin" title="Reset Pin">Reset PIN</a></li>
+        <li><a href="http://svs.mbasys.co.uk/trading/Home/Logout">Log Out</a></li>
+    </ul>
+
+</div>
+
+<div class="hidden-xs pull-right securemessages" id="SecureMessageSummary">
+
+    <a onclick="window.setTimeout(function(){},0);" class="dropdown-toggle" data-toggle="dropdown">
+        <span class="badge pull-left"><span class="badgetext" data-bind="text: unreadCount">0</span></span> <i class="fa fa-envelope"></i>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-left" role="menu">
+        <li role="presentation" class="dropdown-header" data-bind="text: unreadCount() &gt; 0 ? 'You have new Messages' : 'You have no new Messages'">You have no new Messages</li>
+        <!-- ko foreach : messages --><!-- /ko -->
+
+        <li class="allmessages">
+            <a href="http://svs.mbasys.co.uk/trading/SecureMessaging">
+                <div>
+                    <div class="pull-left">
+                        See all messages
+                    </div>
+                    <i class="fa fa-arrow-circle-right pull-right"></i>
+                </div>
+                <div class="clearfix"></div>
+            </a>
+        </li>
+    </ul>
+
+</div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="container header-bar">
+        <div class="navbar-header navbarWidthFix">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            <a style="cursor: default" class="navbar-brand logo-nav hidden-xs " href="#">
+                <img src="Portfolios_files/logo.png" alt="SVS Securities">
+            </a>
+            <a class="navbar-brand logo-nav hidden-sm hidden-md hidden-lg hidden-xl hidden-print" href="#" style="cursor: default">
+                <img src="Portfolios_files/logo-sm.png" alt="SVS Securities">
+            </a>
+        </div>
+
+
+<div class="collapse navbar-collapse">
+
+    <form action="/trading/Stock/FullSearch" class="navbar-form navbar-right hidden-sm hidden-xs" id="instrumentSearch" method="post" role="search" style="position:relative;top:4px;">        <div class="form-group" style="">
+                <span style="position: relative; display: inline-block; direction: ltr;" class="twitter-typeahead"><input spellcheck="false" autocomplete="off" disabled="disabled" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background: none repeat scroll 0% 0% rgb(255, 255, 255);" class="form-control input-sm typeahead tt-hint" type="text"><input dir="auto" style="position: relative; vertical-align: top; background-color: transparent;" spellcheck="false" autocomplete="off" id="QuickSearch" name="QuickSearch" class="form-control input-sm typeahead tt-input" placeholder="Stock Search" type="text"><pre style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Open Sans&quot;,Arial,sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;" aria-hidden="true"></pre><span style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;" class="tt-dropdown-menu"><div class="tt-dataset-svs-instruments"></div></span></span>
+
+                <input id="sc" name="sc" type="hidden">
+
+            </div>
+            <a href="#" onclick="$('#instrumentSearch').submit()" id="QuickSearchButton" class="btn btn-default btn-sm" style="padding-top: 4px; padding-bottom: 6px;"><i class="fa fa-search"></i></a>
+    </form>
+    <form id="instrumentSearchMobile" action="/trading/Stock/FullSearch" name="instrumentSearchMobile" method="post">
+        <div class="form-inline hidden-sm hidden-md hidden-lg hidden-xl">
+            <input id="QuickSearchSmall" name="QuickSearch" class="form-control input-sm mobile-search" placeholder="Stock Search" style="width:88%;display:inline;margin-bottom:6px;margin-top:6px;line-height:2.2;border-top-left-radius: 16px;border-bottom-left-radius: 16px;" type="text">
+            <a href="#" onclick="$(this).parents('form:first').submit();" id="QuickSearchButton" class="btn btn-default btn-sm mobile-search-button" style="width:12%;margin-top:-1px;line-height:2.2;border-top-right-radius: 16px;border-bottom-right-radius: 16px;"><i style="margin-left:-3px;" class="fa fa-search"></i></a>
+            <input style="margin-left: -100000px" type="submit">
+
+        </div>
+    </form>
+    
+    <ul class="nav navbar-nav navbar-right" style="margin-top:5px;">
+        <li class="dropdown active">
+            <a href="http://svs.mbasys.co.uk/trading/" title="Portfolios">Portfolios</a>
+        </li>
+        <li class="dropdown">
+            <a href="http://svs.mbasys.co.uk/trading/Portfolio" class="dropdown-toggle" data-toggle="dropdown">Holdings <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                    <li><a href="http://svs.mbasys.co.uk/trading/Portfolio/Index/1840">SVS Online Trading Account - 3884</a></li>
+                    <li><a href="http://svs.mbasys.co.uk/trading/Portfolio/Index/1849">SVS Online ISA Account - 3893</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            
+            <a href="http://svs.mbasys.co.uk/trading/payment/AccountSummary">Cash</a>
+            <ul class="dropdown-menu">
+                <li><a href="http://svs.mbasys.co.uk/trading/Payment">Make a Debit Card Payment or ISA Subscription</a></li>
+                <li><a href="http://svs.mbasys.co.uk/trading/Payment/Withdrawal">Request a Refund to your Bank</a></li>
+                    <li><a href="http://svs.mbasys.co.uk/trading/Payment/Transfer">Transfer Money Between Accounts</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Buy &amp; Sell <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="http://svs.mbasys.co.uk/trading/Stock/Index">At Best</a></li>
+                <li><a href="http://svs.mbasys.co.uk/trading/Stock/Index">Limits</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Orders <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                
+                <li><a href="http://svs.mbasys.co.uk/trading/Order/Limits">Limit Orders</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">History <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="http://svs.mbasys.co.uk/trading/TradeHistory">Trade History</a></li>
+                <li><a href="http://svs.mbasys.co.uk/trading/TradeHistory/Dividends">Dividends</a></li>
+                <li><a href="http://svs.mbasys.co.uk/trading/TradeHistory/CashHistory">Cash History</a></li>
+                <li><a href="http://svs.mbasys.co.uk/trading/TradeHistory/Statements">Statements</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="http://svs.mbasys.co.uk/trading/Stock" title="Research">Research</a>
+                </li>
+                <li>
+                    <a href="http://svs.mbasys.co.uk/trading/WatchList">Watchlist</a>
+                </li>
+            </ul>
+        </li>
+        <li style="border-bottom: solid 1px #ffffff" class="dropdown hidden-sm hidden-md hidden-lg settingsMenu-xs hidden-xl ">
+            
+            <a href="http://svs.mbasys.co.uk/trading/SecureMessaging">
+                <img src="Portfolios_files/xs_icon_email.jpg">Your Inbox
+            </a>
+
+        </li>
+        <li style="border-bottom: solid 1px #ffffff" class="dropdown hidden-sm hidden-md hidden-lg settingsMenu-xs hidden-xl ">
+
+            <a href="http://svs.mbasys.co.uk/trading/Client">
+                <img src="Portfolios_files/xs_icon_person.jpg" style="margin-right:3px;">Personal Details
+            </a>
+
+
+        </li>
+        <li style="border-bottom: solid 1px #ffffff" class="dropdown hidden-sm hidden-md hidden-lg settingsMenu-xs hidden-xl ">
+
+            <a href="http://svs.mbasys.co.uk/trading/Client/ChangePassword">
+                <img src="Portfolios_files/xs_icon_padlock.jpg" style="margin-right:8px;margin-left:7px;">Change Password
+            </a>
+
+        </li>
+        <li style="border-bottom: solid 1px #ffffff" class="dropdown hidden-sm hidden-md hidden-lg settingsMenu-xs hidden-xl ">
+
+            <a href="http://svs.mbasys.co.uk/trading/Client/ChangePin">
+                <img src="Portfolios_files/xs_icon_recycle.jpg" style="margin-right:7px;margin-left:3px;">Reset PIN
+            </a>
+
+
+        </li>
+        <li style="border-bottom: solid 1px #ffffff" class="dropdown hidden-sm hidden-md hidden-lg settingsMenu-xs hidden-xl ">
+
+            <a href="http://svs.mbasys.co.uk/trading/Home/Logout">
+                <img src="Portfolios_files/xs_icon_logout.jpg" style="margin-left:2px; margin-right:2px; ">Log Out
+            </a>
+
+        </li>
+
+    </ul>
+
+</div><!-- /.nav-collapse -->
+
+
+
+    </div>
+<div class="title" id="PageTitle">
+    <div class="container">
+        <div class="row hidden-xs">
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <h1>Portfolios</h1>
+            </div>
+            <div class="col-sm-6 col-md-8 col-lg-8 summary">
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-12" id="SiteSummary">
+                    <div data-bind="with: pageData" style="padding-left: 0px; padding-right: 0px;">
+                        <div>
+                            <div class="total">
+                                <div class="item"><strong>Investment Value: </strong><span data-bind="text: '£' + FormatCurrencyValue(Value(), 2, '0.00')">£10,325.22</span></div>
+                                <div class="item"><strong>Available Cash: </strong><span data-bind="text: '£' + FormatCurrencyValue(Balance(), 2, '0.00')">£24,152.87</span></div>
+                                <div class="item"><strong>Total Value: </strong><span data-bind="text: '£' + FormatCurrencyValue(Value() + Balance(), 2, '0.00')">£34,478.09</span></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="row hidden-sm hidden-md hidden-lg hidden-xl">
+            <div class="col-xs-5">
+                <h1>Portfolios</h1>
+            </div>
+                <div class="col-xs-7" data-bind="with: pageData">
+                    <div class="pull-right" style="color: #FFFFFF">
+                        
+                        <span style="clear: both; display: block; float: right; text-align: right; margin-top: 10px;"><strong>Available Cash: </strong><span data-bind="text: '£' + FormatCurrencyValue(Balance(), 2, '0.00')">£24,152.87</span></span>
+                        
+                    </div>
+                </div>
+        </div>
+
+
+            </div>
+        </div>
+</div>
+
+
+
+<div class="navbar hidden-sm hidden-md hidden-lg hidden-xl" role="navigation" id="SiteNavigation">
+
+    
+<div class="container welcome" style="width: 100%">
+
+    <div class="container">
+        <div class=" row">
+            <div class="col-md-12">
+
+<div class="hidden-xs pull-right salutation">
+
+    <a onclick="window.setTimeout(function(){},0);" class="dropdown-toggle" data-toggle="dropdown">
+        <i class="fa fa-user"></i>
+        Hi, MR CHRISTOPHER TVR <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-left" role="menu">
+        <li><a href="http://svs.mbasys.co.uk/trading/Client" title="Personal Details">Personal Details</a></li>
+        <li><a href="http://svs.mbasys.co.uk/trading/Client/ChangePassword" title="Change Password">Change Password</a></li>
+        <li><a href="http://svs.mbasys.co.uk/trading/Client/ChangePin" title="Reset Pin">Reset PIN</a></li>
+        <li><a href="http://svs.mbasys.co.uk/trading/Home/Logout">Log Out</a></li>
+    </ul>
+
+</div>
+
+<div class="hidden-xs pull-right securemessages" id="SecureMessageSummary">
+
+    <a onclick="window.setTimeout(function(){},0);" class="dropdown-toggle" data-toggle="dropdown">
+        <span class="badge pull-left"><span class="badgetext" data-bind="text: unreadCount">&nbsp;</span></span> <i class="fa fa-envelope"></i>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-left" role="menu">
+        <li role="presentation" class="dropdown-header" data-bind="text: unreadCount() &gt; 0 ? 'You have new Messages' : 'You have no new Messages'"></li>
+        <!-- ko foreach : messages -->
+        <li class="message">
+            <a data-bind="attr: { 'href': '/trading/SecureMessaging/Index/' + Id() }">
+                <div class="messageheading">
+                    <div class="subject pull-left" data-bind="text: Subject"></div>
+                    <div class="time pull-right" data-bind="text: moment(Sent()).fromNow()"></div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="messagesummary" data-bind="truncatedText: Content">
+                </div>
+            </a>
+        </li>
+        <!-- /ko -->
+
+        <li class="allmessages">
+            <a href="http://svs.mbasys.co.uk/trading/SecureMessaging">
+                <div>
+                    <div class="pull-left">
+                        See all messages
+                    </div>
+                    <i class="fa fa-arrow-circle-right pull-right"></i>
+                </div>
+                <div class="clearfix"></div>
+            </a>
+        </li>
+    </ul>
+
+</div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            <a style="cursor: default" class="navbar-brand logo-nav hidden-sm hidden-xs" href="#">
+                <img src="Portfolios_files/logo.png" alt="SVS Securities">
+            </a>
+                <a class="navbar-brand logo-nav hidden-md hidden-lg hidden-xl hidden-print" href="#" style="cursor: default">
+                    <img src="Portfolios_files/logo-sm.png" alt="SVS Securities">
+                </a>
+
+        </div>
+
+
+<nav class="menu slide-menu-left">
+    <div class="collapse navbar-collapse">
+
+        <form action="/trading/Stock/FullSearch" class="navbar-form navbar-right hidden-sm hidden-xs" id="instrumentSearch" method="post" role="search" style="position:relative;top:4px;">        <div class="form-group" style="">
+                    <input id="QuickSearch" name="QuickSearch" class="form-control input-sm typeahead" placeholder="Stock Search" type="text">
+
+                    <input id="sc" name="sc" type="hidden">
+
+                </div>
+                <a href="#" onclick="$('#instrumentSearch').submit()" id="QuickSearchButton" class="btn btn-default btn-sm" style="padding-top: 4px; padding-bottom: 6px;"><i class="fa fa-search"></i></a>
+        </form>
+        <form id="instrumentSearchMobile" action="/trading/Stock/FullSearch" name="instrumentSearchMobile" method="post">
+            <div class="form-inline hidden-sm hidden-md hidden-lg hidden-xl">
+                <input id="QuickSearchSmall" name="QuickSearch" class="form-control input-sm mobile-search" placeholder="Stock Search" style="width:88%;display:inline;margin-bottom:6px;margin-top:6px;line-height:2.2;border-top-left-radius: 16px;border-bottom-left-radius: 16px;" type="text">
+                <a href="#" onclick="$(this).parents('form:first').submit();" id="QuickSearchButton" class="btn btn-default btn-sm mobile-search-button" style="width:12%;margin-top:-1px;line-height:2.2;border-top-right-radius: 16px;border-bottom-right-radius: 16px;"><i style="margin-left:-3px;" class="fa fa-search"></i></a>
+                <input style="margin-left: -100000px" type="submit">
+
+            </div>
+        </form>
+        
+        <ul class="nav navbar-nav navbar-right" style="margin-top:5px;">
+            <li class="dropdown active">
+                <a href="http://svs.mbasys.co.uk/trading/" title="Portfolios">Portfolios</a>
+            </li>
+            <li class="dropdown">
+                <a href="http://svs.mbasys.co.uk/trading/Portfolio" class="dropdown-toggle" data-toggle="dropdown">Holdings <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                        <li><a href="http://svs.mbasys.co.uk/trading/Portfolio/Index/1840">SVS Online Trading Account - 3884</a></li>
+                        <li><a href="http://svs.mbasys.co.uk/trading/Portfolio/Index/1849">SVS Online ISA Account - 3893</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                
+                <a href="http://svs.mbasys.co.uk/trading/payment/AccountSummary">Cash</a>
+                <ul class="dropdown-menu">
+                    <li><a href="http://svs.mbasys.co.uk/trading/Payment">Make a Debit Card Payment or ISA Subscription</a></li>
+                    <li><a href="http://svs.mbasys.co.uk/trading/Payment/Withdrawal">Request a Refund to your Bank</a></li>
+                        <li><a href="http://svs.mbasys.co.uk/trading/Payment/Transfer">Transfer Money Between Accounts</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Buy &amp; Sell <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="http://svs.mbasys.co.uk/trading/Stock/Index">At Best</a></li>
+                    <li><a href="http://svs.mbasys.co.uk/trading/Stock/Index">Limits</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Orders <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    
+                    <li><a href="http://svs.mbasys.co.uk/trading/Order/Limits">Limit Orders</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">History <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="http://svs.mbasys.co.uk/trading/TradeHistory">Trade History</a></li>
+                    <li><a href="http://svs.mbasys.co.uk/trading/TradeHistory/Dividends">Dividends</a></li>
+                    <li><a href="http://svs.mbasys.co.uk/trading/TradeHistory/CashHistory">Cash History</a></li>
+                    <li><a href="http://svs.mbasys.co.uk/trading/TradeHistory/Statements">Statements</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="http://svs.mbasys.co.uk/trading/Stock" title="Research">Research</a>
+                    </li>
+                    <li>
+                        <a href="http://svs.mbasys.co.uk/trading/WatchList">Watchlist</a>
+                    </li>
+                </ul>
+            </li>
+            <li style="border-bottom: solid 1px #ffffff" class="dropdown hidden-sm hidden-md hidden-lg settingsMenu-xs hidden-xl ">
+                
+                <a href="http://svs.mbasys.co.uk/trading/SecureMessaging">
+                    <img src="Portfolios_files/xs_icon_email.jpg">Your Inbox
+                </a>
+
+            </li>
+            <li style="border-bottom: solid 1px #ffffff" class="dropdown hidden-sm hidden-md hidden-lg settingsMenu-xs hidden-xl ">
+
+                <a href="http://svs.mbasys.co.uk/trading/Client">
+                    <img src="Portfolios_files/xs_icon_person.jpg" style="margin-right:3px;">Personal Details
+                </a>
+
+
+            </li>
+            <li style="border-bottom: solid 1px #ffffff" class="dropdown hidden-sm hidden-md hidden-lg settingsMenu-xs hidden-xl ">
+
+                <a href="http://svs.mbasys.co.uk/trading/Client/ChangePassword">
+                    <img src="Portfolios_files/xs_icon_padlock.jpg" style="margin-right:8px;margin-left:7px;">Change Password
+                </a>
+
+            </li>
+            <li style="border-bottom: solid 1px #ffffff" class="dropdown hidden-sm hidden-md hidden-lg settingsMenu-xs hidden-xl ">
+
+                <a href="http://svs.mbasys.co.uk/trading/Client/ChangePin">
+                    <img src="Portfolios_files/xs_icon_recycle.jpg" style="margin-right:7px;margin-left:3px;">Reset PIN
+                </a>
+
+
+            </li>
+            <li style="border-bottom: solid 1px #ffffff" class="dropdown hidden-sm hidden-md hidden-lg settingsMenu-xs hidden-xl ">
+
+                <a href="http://svs.mbasys.co.uk/trading/Home/Logout">
+                    <img src="Portfolios_files/xs_icon_logout.jpg" style="margin-left:2px; margin-right:2px; ">Log Out
+                </a>
+
+            </li>
+
+        </ul>
+
+
+
+    </div><!-- /.nav-collapse -->
+</nav>
+
+
+    </div>
+
+<div class="title" id="PageTitle">
+    <div class="container">
+        <div class="row hidden-xs">
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <h1>Portfolios</h1>
+            </div>
+            <div class="col-sm-6 col-md-8 col-lg-8 summary">
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-12" id="SiteSummary">
+                    <div data-bind="with: pageData" style="padding-left: 0px; padding-right: 0px;">
+                        <div>
+                            <div class="total">
+                                <div class="item"><strong>Investment Value: </strong><span data-bind="text: '£' + FormatCurrencyValue(Value(), 2, '0.00')">£10,325.22</span></div>
+                                <div class="item"><strong>Available Cash: </strong><span data-bind="text: '£' + FormatCurrencyValue(Balance(), 2, '0.00')">£24,152.87</span></div>
+                                <div class="item"><strong>Total Value: </strong><span data-bind="text: '£' + FormatCurrencyValue(Value() + Balance(), 2, '0.00')">£34,478.09</span></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="row hidden-sm hidden-md hidden-lg hidden-xl">
+            <div class="col-xs-5">
+                <h1>Portfolios</h1>
+            </div>
+                <div class="col-xs-7" data-bind="with: pageData">
+                    <div class="pull-right" style="color: #FFFFFF">
+                        
+                        <span style="clear: both; display: block; float: right; text-align: right; margin-top: 10px;"><strong>Available Cash: </strong><span data-bind="text: '£' + FormatCurrencyValue(Balance(), 2, '0.00')">£24,152.87</span></span>
+                        
+                    </div>
+                </div>
+        </div>
+
+
+            </div>
+        </div>
+</div>
+
+    <div id="PageData">
+        
+
+
+
+
+<div class="container" id="Portfolios">
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+
+            <div class="subtitle hidden-xs" style="margin-bottom:50px;">
+                <h2 style="margin-bottom:5px;">Welcome back  MR CHRISTOPHER TVR</h2>
+                <div style="display: none;" id="banner" class="promo-text" data-bind="visible: pageData().ShowPromoDiv()">
+                    
+                </div>
+            </div>
+
+            <div class="subtitle hidden-sm hidden-md hidden-lg hidden-xl" style="margin-bottom:20px;">
+                <h2 style="margin-bottom:5px;">Welcome back  MR CHRISTOPHER TVR</h2>
+                <div style="display: none;" id="banner" class="promo-text" data-bind="visible: pageData().ShowPromoDiv()">
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 ">
+
+                    <h3 class="sectionHeaderRebrand" style="margin-top: 0px;">Portfolio Overview</h3>
+
+                    <div class="hidden-xs" id="ResponsiveContainer">
+
+                        <table class="table table-hover table-bordered" id="Accounts" data-bind="with: pageData" data-table="AllAccounts">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <a href="#" data-column="AccountTypeName" data-bind="click: function (data, event) { OrderBy(data, event) }, css: ($root.orderedBy() == 'AccountTypeName') ? 'Sorted' : ''">
+                                            <i class="fa fa-sort-desc" style="display: none;" data-bind="visible: $root.orderedBy() == 'AccountTypeName' ? true : false, css: $root.orderDir() == 'Asc' ? 'fa fa-sort-asc' : 'fa fa-sort-desc'"></i>
+                                            Portfolios
+                                        </a>
+                                    </th>
+                                    <th>
+                                        <a href="#" data-column="Ref" data-bind="click: function (data, event) { OrderBy(data, event) }, css: ($root.orderedBy() == 'Ref') ? 'Sorted' : ''">
+                                            <i class="fa fa-sort-desc" style="display: none;" data-bind="visible: $root.orderedBy() == 'Ref' ? true : false, css: $root.orderDir() == 'Asc' ? 'fa fa-sort-asc' : 'fa fa-sort-desc'"></i>
+                                            Ref
+                                        </a>
+                                    </th>
+                                    <th style="text-align: right">
+                                        <a href="#" data-column="Value" data-bind="click: function (data, event) { OrderBy(data, event) }, css: ($root.orderedBy() == 'Value') ? 'Sorted' : ''">
+                                            <i class="fa fa-sort-desc" style="display: none;" data-bind="visible: $root.orderedBy() == 'Value' ? true : false, css: $root.orderDir() == 'Asc' ? 'fa fa-sort-asc' : 'fa fa-sort-desc'"></i>
+                                            Value (£)
+                                        </a>
+                                    </th>
+                                    <th style="text-align: right">
+                                        <a href="#" data-column="Balance" data-bind="click: function (data, event) { OrderBy(data, event) }, css: ($root.orderedBy() == 'Balance') ? 'Sorted' : ''">
+                                            <i class="fa fa-sort-desc" style="display: none;" data-bind="visible: $root.orderedBy() == 'Balance' ? true : false, css: $root.orderDir() == 'Asc' ? 'fa fa-sort-asc' : 'fa fa-sort-desc'"></i>
+                                            Cash Balance (£)
+                                        </a>
+                                    </th>
+                                    <th class="buttons">&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody data-bind="foreach: AllAccounts">
+                                <tr>
+                                    <td style="font-weight: 700">
+                                        <!-- ko if: Ref -->
+                                        <!-- ko if: ViewableAccount -->
+                                        <a href="http://svs.mbasys.co.uk/trading/Portfolio/Index/1840" title="SVS Online Trading Account" data-bind="text: AccountTypeName, attr: { 'title': AccountTypeName, 'href': '/trading/Portfolio/Index/' + Id() }">SVS Online Trading Account</a>
+                                        <!-- /ko -->
+                                        <!-- /ko -->
+                                        <!-- ko ifnot: Ref --><!-- /ko -->
+                                    </td>
+                                    <td style="font-weight: 700">
+                                        <!-- ko if: Ref -->
+                                        <!-- ko if: ViewableAccount -->
+                                        <a href="http://svs.mbasys.co.uk/trading/Portfolio/Index/1840" title="3884" data-bind="text: Ref, attr: { 'title': Ref, 'href': '/trading/Portfolio/Index/' + Id() }">3884</a>
+                                        <!-- /ko -->
+                                        <!-- /ko -->
+                                        <!-- ko ifnot: Ref --><!-- /ko -->
+                                    </td>
+                                    <td style="text-align: right" data-bind="text: FormatCurrencyValue(Value(), 2, '0.00')">5,049.31</td>
+                                    <td style="text-align: right" data-bind="html: FormatCurrencyValue(Balance(), 2, '0.00')">14,227.71</td>
+                                    <td class="buttons" style="text-align: center">
+                                        <!-- ko if: Ref -->
+                                        <!-- ko if: ViewableAccount -->
+                                        <a href="http://svs.mbasys.co.uk/trading/Portfolio/Index/1840" class="btn btn-sm btn-success" data-bind="attr: { 'href': '/trading/Portfolio/Index/' + Id() }">
+                                            View
+                                        </a>
+                                        <!-- /ko -->
+                                        <!-- /ko -->
+                                        <!-- ko ifnot: Ref --><!-- /ko -->
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td style="font-weight: 700">
+                                        <!-- ko if: Ref -->
+                                        <!-- ko if: ViewableAccount -->
+                                        <a href="http://svs.mbasys.co.uk/trading/Portfolio/Index/1849" title="SVS Online ISA Account" data-bind="text: AccountTypeName, attr: { 'title': AccountTypeName, 'href': '/trading/Portfolio/Index/' + Id() }">SVS Online ISA Account</a>
+                                        <!-- /ko -->
+                                        <!-- /ko -->
+                                        <!-- ko ifnot: Ref --><!-- /ko -->
+                                    </td>
+                                    <td style="font-weight: 700">
+                                        <!-- ko if: Ref -->
+                                        <!-- ko if: ViewableAccount -->
+                                        <a href="http://svs.mbasys.co.uk/trading/Portfolio/Index/1849" title="3893" data-bind="text: Ref, attr: { 'title': Ref, 'href': '/trading/Portfolio/Index/' + Id() }">3893</a>
+                                        <!-- /ko -->
+                                        <!-- /ko -->
+                                        <!-- ko ifnot: Ref --><!-- /ko -->
+                                    </td>
+                                    <td style="text-align: right" data-bind="text: FormatCurrencyValue(Value(), 2, '0.00')">5,275.91</td>
+                                    <td style="text-align: right" data-bind="html: FormatCurrencyValue(Balance(), 2, '0.00')">9,925.16</td>
+                                    <td class="buttons" style="text-align: center">
+                                        <!-- ko if: Ref -->
+                                        <!-- ko if: ViewableAccount -->
+                                        <a href="http://svs.mbasys.co.uk/trading/Portfolio/Index/1849" class="btn btn-sm btn-success" data-bind="attr: { 'href': '/trading/Portfolio/Index/' + Id() }">
+                                            View
+                                        </a>
+                                        <!-- /ko -->
+                                        <!-- /ko -->
+                                        <!-- ko ifnot: Ref --><!-- /ko -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">Total</td>
+                                    <td style="text-align: right" data-bind="text: FormatCurrencyValue(Value(), 2)">10,325.22</td>
+                                    <td style="text-align: right" data-bind="text: FormatCurrencyValue(Balance(), 2)">24,152.87</td>
+                                    <td class="buttons"></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+
+                    </div>
+
+                    <div class="hidden-sm hidden-md hidden-lg hidden-xl" data-bind="with: pageData">
+                        <div class="summaries-xs" data-bind="foreach: AllAccounts">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <!-- ko if: Ref -->
+                                    <!-- ko if: ViewableAccount -->
+                                    <a href="http://svs.mbasys.co.uk/trading/Portfolio/Index/1840" title="SVS Online Trading Account" data-bind="text: AccountTypeName, attr: { 'title': AccountTypeName, 'href': '/trading/Portfolio/Index/' + Id() }">SVS Online Trading Account</a>
+                                    <!-- /ko -->
+                                    <!-- /ko -->
+                                    <!-- ko ifnot: Ref --><!-- /ko -->
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-5">
+                                            <strong>Ref</strong>
+                                        </div>
+                                        <div class="col-xs-7">
+                                            <!-- ko if: Ref -->
+                                            <!-- ko if: ViewableAccount -->
+                                            <a href="http://svs.mbasys.co.uk/trading/Portfolio/Index/1840" title="3884" data-bind="text: Ref, attr: { 'title': Ref, 'href': '/trading/Portfolio/Index/' + Id() }">3884</a>
+                                            <!-- /ko -->
+                                            <!-- /ko -->
+                                            <!-- ko ifnot: Ref --><!-- /ko -->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-5" style="white-space:nowrap;">
+                                            <strong>Value (£)</strong>
+                                        </div>
+                                        <div class="col-xs-7" data-bind="text: FormatCurrencyValue(Value(), 2, '0.00')">5,049.31</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-5" style="white-space:nowrap;">
+                                            <strong>Cash Balance (£)</strong>
+                                        </div>
+                                        <div class="col-xs-7" data-bind="html: FormatCurrencyValue(Balance(), 2, '0.00')">14,227.71</div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer">
+                                    <!-- ko if: Ref -->
+                                    <!-- ko if: ViewableAccount -->
+                                    <a href="http://svs.mbasys.co.uk/trading/Portfolio/Index/1840" class="btn btn-sm btn-success btn-block" data-bind="attr: { 'href': '/trading/Portfolio/Index/' + Id() }">
+                                        View
+                                    </a>
+                                    <!-- /ko -->
+                                    <!-- /ko -->
+                                    <!-- ko ifnot: Ref --><!-- /ko -->
+                                </div>
+                            </div>
+                        
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <!-- ko if: Ref -->
+                                    <!-- ko if: ViewableAccount -->
+                                    <a href="http://svs.mbasys.co.uk/trading/Portfolio/Index/1849" title="SVS Online ISA Account" data-bind="text: AccountTypeName, attr: { 'title': AccountTypeName, 'href': '/trading/Portfolio/Index/' + Id() }">SVS Online ISA Account</a>
+                                    <!-- /ko -->
+                                    <!-- /ko -->
+                                    <!-- ko ifnot: Ref --><!-- /ko -->
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-5">
+                                            <strong>Ref</strong>
+                                        </div>
+                                        <div class="col-xs-7">
+                                            <!-- ko if: Ref -->
+                                            <!-- ko if: ViewableAccount -->
+                                            <a href="http://svs.mbasys.co.uk/trading/Portfolio/Index/1849" title="3893" data-bind="text: Ref, attr: { 'title': Ref, 'href': '/trading/Portfolio/Index/' + Id() }">3893</a>
+                                            <!-- /ko -->
+                                            <!-- /ko -->
+                                            <!-- ko ifnot: Ref --><!-- /ko -->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-5" style="white-space:nowrap;">
+                                            <strong>Value (£)</strong>
+                                        </div>
+                                        <div class="col-xs-7" data-bind="text: FormatCurrencyValue(Value(), 2, '0.00')">5,275.91</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-5" style="white-space:nowrap;">
+                                            <strong>Cash Balance (£)</strong>
+                                        </div>
+                                        <div class="col-xs-7" data-bind="html: FormatCurrencyValue(Balance(), 2, '0.00')">9,925.16</div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer">
+                                    <!-- ko if: Ref -->
+                                    <!-- ko if: ViewableAccount -->
+                                    <a href="http://svs.mbasys.co.uk/trading/Portfolio/Index/1849" class="btn btn-sm btn-success btn-block" data-bind="attr: { 'href': '/trading/Portfolio/Index/' + Id() }">
+                                        View
+                                    </a>
+                                    <!-- /ko -->
+                                    <!-- /ko -->
+                                    <!-- ko ifnot: Ref --><!-- /ko -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/span-->
+
+                <div class="clearfix">
+                </div>
+
+
+                <div class="col-md-12">
+
+                    <h3 class="sectionHeader">Your Market News &amp; Movers</h3>
+
+                </div>
+
+                <div class="col-6 col-sm-6 col-lg-6 col-xl-6" id="newsTabContainer">
+
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#MarketNews" data-toggle="tab"><i class="fa fa-tasks"></i> Market News</a></li>
+                        <li><a href="#MyNews" data-toggle="tab"><i class="fa fa-th-list"></i> My News</a></li>
+                        <li><a href="#Indices" data-toggle="tab"><i class="fa fa-list-ol"></i> Indices</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="MarketNews">
+                            <div class="list-group" data-bind="foreach: pageData().NewsFeeds">
+                                <a href="#" class="list-group-item" data-toggle="modal" data-target="#newsModal" data-bind="click: $parent.selectNewsArticle">
+                                    <h5 class="list-group-item-heading" data-bind="html: Title">FTSE 100 movers: Mining and telecom stocks on the rise</h5>
+                                    <p class="list-group-item-text" data-bind="text: FormatDateTime(ArticleDate())">26/11/2014 15:29</p>
+                                </a>
+                            
+                                <a href="#" class="list-group-item" data-toggle="modal" data-target="#newsModal" data-bind="click: $parent.selectNewsArticle">
+                                    <h5 class="list-group-item-heading" data-bind="html: Title">Results Round-up</h5>
+                                    <p class="list-group-item-text" data-bind="text: FormatDateTime(ArticleDate())">26/11/2014 15:05</p>
+                                </a>
+                            
+                                <a href="#" class="list-group-item" data-toggle="modal" data-target="#newsModal" data-bind="click: $parent.selectNewsArticle">
+                                    <h5 class="list-group-item-heading" data-bind="html: Title">US open: Markets largely unchanged after slightly disappointing economic data</h5>
+                                    <p class="list-group-item-text" data-bind="text: FormatDateTime(ArticleDate())">26/11/2014 14:56</p>
+                                </a>
+                            
+                                <a href="#" class="list-group-item" data-toggle="modal" data-target="#newsModal" data-bind="click: $parent.selectNewsArticle">
+                                    <h5 class="list-group-item-heading" data-bind="html: Title">Sector movers: M&amp;A hopes lift telecoms as BT and Vodafone gain</h5>
+                                    <p class="list-group-item-text" data-bind="text: FormatDateTime(ArticleDate())">26/11/2014 14:26</p>
+                                </a>
+                            
+                                <a href="#" class="list-group-item" data-toggle="modal" data-target="#newsModal" data-bind="click: $parent.selectNewsArticle">
+                                    <h5 class="list-group-item-heading" data-bind="html: Title">FTSE 250 Movers: Thomas Cook plummets as CEO steps down</h5>
+                                    <p class="list-group-item-text" data-bind="text: FormatDateTime(ArticleDate())">26/11/2014 14:25</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="MyNews">
+                            <div class="list-group" data-bind="foreach: myNewsData">
+                                <a href="#" class="list-group-item" data-toggle="modal" data-target="#newsModal" data-bind="click: $parent.selectNewsArticle">
+                                    <h5 class="list-group-item-heading" data-bind="html: Title">FTSE 100 movers: Mining and telecom stocks on the rise</h5>
+                                    <p class="list-group-item-text" data-bind="text: FormatDateTime(ArticleDate())">26/11/2014 15:29</p>
+                                </a>
+                            
+                                <a href="#" class="list-group-item" data-toggle="modal" data-target="#newsModal" data-bind="click: $parent.selectNewsArticle">
+                                    <h5 class="list-group-item-heading" data-bind="html: Title">Sector movers: M&amp;A hopes lift telecoms as BT and Vodafone gain</h5>
+                                    <p class="list-group-item-text" data-bind="text: FormatDateTime(ArticleDate())">26/11/2014 14:26</p>
+                                </a>
+                            
+                                <a href="#" class="list-group-item" data-toggle="modal" data-target="#newsModal" data-bind="click: $parent.selectNewsArticle">
+                                    <h5 class="list-group-item-heading" data-bind="html: Title">London midday: Mining stocks and telecoms M&amp;A give FTSE a lift</h5>
+                                    <p class="list-group-item-text" data-bind="text: FormatDateTime(ArticleDate())">26/11/2014 11:42</p>
+                                </a>
+                            
+                                <a href="#" class="list-group-item" data-toggle="modal" data-target="#newsModal" data-bind="click: $parent.selectNewsArticle">
+                                    <h5 class="list-group-item-heading" data-bind="html: Title">Tuesday broker round-up UPDATE</h5>
+                                    <p class="list-group-item-text" data-bind="text: FormatDateTime(ArticleDate())">07/10/2014 09:45</p>
+                                </a>
+                            
+                                <a href="#" class="list-group-item" data-toggle="modal" data-target="#newsModal" data-bind="click: $parent.selectNewsArticle">
+                                    <h5 class="list-group-item-heading" data-bind="html: Title">London open: UK stocks drop despite mining gains</h5>
+                                    <p class="list-group-item-text" data-bind="text: FormatDateTime(ArticleDate())">07/10/2014 08:27</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="Indices">
+                            <div class="list-group" data-bind="foreach: pageData().IndexFeeds">
+                                <a href="#" class="list-group-item movers-up" data-bind="click: $parent.selectIndex">
+                                    <h5 class="list-group-item-heading" data-bind="text: Name">FTSE 100</h5>
+                                    <p class="list-group-item-text"><span data-bind="text: FormatCurrencyValue(MidPrice(), 2)">6,737.98</span> <span data-bind="text: ChangeToday() == 0 ? '' : (ChangeToday() &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeToday(), 2) ">+6.84</span> (<span data-bind="text: ChangeTodayPerc() == 0 ? '' : (ChangeTodayPerc() &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeTodayPerc(), 2) + '%' ">+0.10%</span>)</p>
+                                </a>
+                            
+                                <a href="#" class="list-group-item movers-up" data-bind="click: $parent.selectIndex">
+                                    <h5 class="list-group-item-heading" data-bind="text: Name">FTSE 250</h5>
+                                    <p class="list-group-item-text"><span data-bind="text: FormatCurrencyValue(MidPrice(), 2)">15,792.48</span> <span data-bind="text: ChangeToday() == 0 ? '' : (ChangeToday() &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeToday(), 2) ">-39.07</span> (<span data-bind="text: ChangeTodayPerc() == 0 ? '' : (ChangeTodayPerc() &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeTodayPerc(), 2) + '%' ">-0.25%</span>)</p>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div><!--/span-->
+                
+
+                <div class="col-6 col-sm-6 col-lg-6 col-xl-6" id="moversTabContainer">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#MarketMovers" data-toggle="tab"><i class="fa fa-sort"></i> Market Movers</a></li>
+                        <li><a href="#MyMovers" data-toggle="tab"><i class="fa fa-th-list"></i> My Movers</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="MarketMovers">
+                            <i style="display: none;" data-bind="visible: moversLoading" class="fa fa-refresh fa-spin fa-4x moversrefresh"></i>
+
+                            <div class="list-group" data-bind="foreach: marketMoversData">
+                                <a href="#" class="list-group-item movers-down" data-bind="click: $parent.selectInstrument">
+                                    <h5 class="list-group-item-heading" data-bind="text: LongName">STAGECOACH GROUP PLC ORD GBP0.009824</h5>
+                                    <p class="list-group-item-text"><span data-bind="text: CurrencyCode">GBX</span> <span data-bind="text: FormatCurrencyValue(Price, 2)">395.90</span> <span data-bind="text: ChangeOnOpen == 0 ? '' : (ChangeOnOpen &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeOnOpen, 2)">+25.90</span> (<span data-bind="text: ChangeOnOpenPerc == 0 ? '' : (ChangeOnOpenPerc &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeOnOpenPerc, 2) + '%' ">+7.00%</span>)</p>
+                                </a>
+                            
+                                <a href="#" class="list-group-item movers-down" data-bind="click: $parent.selectInstrument">
+                                    <h5 class="list-group-item-heading" data-bind="text: LongName">SHAFTESBURY ORD GBP0.25</h5>
+                                    <p class="list-group-item-text"><span data-bind="text: CurrencyCode">GBX</span> <span data-bind="text: FormatCurrencyValue(Price, 2)">810.50</span> <span data-bind="text: ChangeOnOpen == 0 ? '' : (ChangeOnOpen &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeOnOpen, 2)">+48.50</span> (<span data-bind="text: ChangeOnOpenPerc == 0 ? '' : (ChangeOnOpenPerc &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeOnOpenPerc, 2) + '%' ">+6.36%</span>)</p>
+                                </a>
+                            
+                                <a href="#" class="list-group-item movers-down" data-bind="click: $parent.selectInstrument">
+                                    <h5 class="list-group-item-heading" data-bind="text: LongName">RPC GROUP ORD GBP0.05</h5>
+                                    <p class="list-group-item-text"><span data-bind="text: CurrencyCode">GBX</span> <span data-bind="text: FormatCurrencyValue(Price, 2)">578.00</span> <span data-bind="text: ChangeOnOpen == 0 ? '' : (ChangeOnOpen &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeOnOpen, 2)">+31.00</span> (<span data-bind="text: ChangeOnOpenPerc == 0 ? '' : (ChangeOnOpenPerc &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeOnOpenPerc, 2) + '%' ">+5.67%</span>)</p>
+                                </a>
+                            
+                                <a href="#" class="list-group-item movers-down" data-bind="click: $parent.selectInstrument">
+                                    <h5 class="list-group-item-heading" data-bind="text: LongName">JD SPORTS FASHION PLC ORD GBP0.05</h5>
+                                    <p class="list-group-item-text"><span data-bind="text: CurrencyCode">GBX</span> <span data-bind="text: FormatCurrencyValue(Price, 2)">503.00</span> <span data-bind="text: ChangeOnOpen == 0 ? '' : (ChangeOnOpen &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeOnOpen, 2)">+25.40</span> (<span data-bind="text: ChangeOnOpenPerc == 0 ? '' : (ChangeOnOpenPerc &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeOnOpenPerc, 2) + '%' ">+5.32%</span>)</p>
+                                </a>
+                            
+                                <a href="#" class="list-group-item movers-down" data-bind="click: $parent.selectInstrument">
+                                    <h5 class="list-group-item-heading" data-bind="text: LongName">ELECTRA PRIVATE EQUITY ORD GBP0.25</h5>
+                                    <p class="list-group-item-text"><span data-bind="text: CurrencyCode">GBX</span> <span data-bind="text: FormatCurrencyValue(Price, 2)">2,685.00</span> <span data-bind="text: ChangeOnOpen == 0 ? '' : (ChangeOnOpen &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeOnOpen, 2)">+106.00</span> (<span data-bind="text: ChangeOnOpenPerc == 0 ? '' : (ChangeOnOpenPerc &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeOnOpenPerc, 2) + '%' ">+4.11%</span>)</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="MyMovers">
+
+                            <div class="list-group" data-bind="foreach: myMoversData">
+                                <a href="#" class="list-group-item movers-down" data-bind="click: $parent.selectInstrument">
+                                    <h5 class="list-group-item-heading" data-bind="text: LongName">STANDARD CHARTERED ORD USD0.50</h5>
+                                    <p class="list-group-item-text"><span data-bind="text: CurrencyCode">GBX</span> <span data-bind="text: FormatCurrencyValue(Price, 2)">939.30</span> <span data-bind="text: ChangeOnOpen == 0 ? '' : (ChangeOnOpen &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeOnOpen, 2)">+1.75</span> (<span data-bind="text: ChangeOnOpenPerc == 0 ? '' : (ChangeOnOpenPerc &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeOnOpenPerc, 2) + '%' ">+0.19%</span>)</p>
+                                </a>
+                            
+                                <a href="#" class="list-group-item movers-down" data-bind="click: $parent.selectInstrument">
+                                    <h5 class="list-group-item-heading" data-bind="text: LongName">BAE SYSTEMS ORD GBP0.025</h5>
+                                    <p class="list-group-item-text"><span data-bind="text: CurrencyCode">GBX</span> <span data-bind="text: FormatCurrencyValue(Price, 2)">474.70</span> <span data-bind="text: ChangeOnOpen == 0 ? '' : (ChangeOnOpen &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeOnOpen, 2)">+0.15</span> (<span data-bind="text: ChangeOnOpenPerc == 0 ? '' : (ChangeOnOpenPerc &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeOnOpenPerc, 2) + '%' ">+0.03%</span>)</p>
+                                </a>
+                            
+                                <a href="#" class="list-group-item movers-down" data-bind="click: $parent.selectInstrument">
+                                    <h5 class="list-group-item-heading" data-bind="text: LongName">VODAFONE GROUP ORD USD0.11428571</h5>
+                                    <p class="list-group-item-text"><span data-bind="text: CurrencyCode">GBP</span> <span data-bind="text: FormatCurrencyValue(Price, 2)">1.67</span> <span data-bind="text: ChangeOnOpen == 0 ? '' : (ChangeOnOpen &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeOnOpen, 2)">undefined</span> (<span data-bind="text: ChangeOnOpenPerc == 0 ? '' : (ChangeOnOpenPerc &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeOnOpenPerc, 2) + '%' ">undefined%</span>)</p>
+                                </a>
+                            
+                                <a href="#" class="list-group-item movers-down" data-bind="click: $parent.selectInstrument">
+                                    <h5 class="list-group-item-heading" data-bind="text: LongName">GLADSTONE
+ PAC DI Gladstone Pacific Nickel Ltd       Depository Interest 
+Representing   Fully Paid Ordinary Shares in      Gladstone Pacific 
+Nickel Ltd</h5>
+                                    <p class="list-group-item-text"><span data-bind="text: CurrencyCode">GBP</span> <span data-bind="text: FormatCurrencyValue(Price, 2)">0.14</span> <span data-bind="text: ChangeOnOpen == 0 ? '' : (ChangeOnOpen &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeOnOpen, 2)">undefined</span> (<span data-bind="text: ChangeOnOpenPerc == 0 ? '' : (ChangeOnOpenPerc &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeOnOpenPerc, 2) + '%' ">undefined%</span>)</p>
+                                </a>
+                            
+                                <a href="#" class="list-group-item movers-down" data-bind="click: $parent.selectInstrument">
+                                    <h5 class="list-group-item-heading" data-bind="text: LongName">LAND SECURITIES GROUP ORD GBP0.10</h5>
+                                    <p class="list-group-item-text"><span data-bind="text: CurrencyCode">GBX</span> <span data-bind="text: FormatCurrencyValue(Price, 2)">1,184.00</span> <span data-bind="text: ChangeOnOpen == 0 ? '' : (ChangeOnOpen &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeOnOpen, 2)">+8.50</span> (<span data-bind="text: ChangeOnOpenPerc == 0 ? '' : (ChangeOnOpenPerc &gt; 0 ? '+' : '') + FormatCurrencyValue(ChangeOnOpenPerc, 2) + '%' ">+0.72%</span>)</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!--/span-->
+            </div><!--/row-->
+        </div><!--/span-->
+    </div>
+
+</div>
+<!-- Modal -->
+<div class="modal fade news-modal" id="newsModal" tabindex="-1" role="dialog" aria-labelledby="newsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" data-bind="with: selectedNews"></div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade instrument-modal" id="instrumentModal" tabindex="-1" role="dialog" aria-labelledby="instrumentModalLabel" aria-hidden="true" data-bind="with: selectedInstrument"></div>
+
+<!-- Modal -->
+<div class="modal fade instrument-modal" id="indexModal" tabindex="-1" role="dialog" aria-labelledby="indexModalLabel" aria-hidden="true" data-bind="with: selectedIndex"></div>
+
+
+    </div>
+
+    <div class="clearfix"><br></div>
+
+    
+<div id="footer">
+    <div class="container">
+
+        <div class="footerlinks row">
+            <div class="col-md-12">
+                <div class="footerlinklist">
+                    <ul>
+                        <li>
+                            <a href="http://svssecurities.com/Default.aspx?tabid=137">About Us</a>
+                        </li>
+                        <li>
+                            <a href="http://svssecurities.com/Default.aspx?tabid=36">Important Information</a>
+                        </li>
+                        <li>
+                            <a href="http://svssecurities.com/Default.aspx?tabid=36">Terms &amp; Conditions</a>
+                        </li>
+                        <li>
+                            <a href="http://svssecurities.com/Default.aspx?tabid=36">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer row" style="clear:both;">
+            <div class="col-md-2">&nbsp;</div>
+            <div id="wrapper" class="col-md-8">
+                <p class="smallprint small">
+                    SVS Online is a service of SVS
+                    Securities plc, which is authorised and regulated by the Financial
+                    Conduct Authority (FRN 220929). SVS Securities plc is registered in
+                    England No. 4402606 Registered Office: 110 Fenchurch Street London, EC3M 5JT
+                    and is a member of the London Stock Exchange.<br><br>
+                    The investment services referred to in these web
+                    pages may not be suitable for all recipients. If you need advice, you
+                    should consult an appropriate Financial Advisor. Past performance is not
+                    necessarily a guide to the future. The value of investments and the
+                    income from them may go down as well as up and you may not get back the
+                    full amount you have invested.
+                </p>
+                <p class="copyright small">
+                    Company No. 04402606. The company is registered in England and Wales<br>
+                    © Copyright 2014 SVS Securities PLC. All rights reserved.
+                </p>
+            </div>
+            <div class="col-md-2">&nbsp;</div>
+        </div>
+    </div>
+</div>
+</div><!--/#wrapper-->
+    
+
+    <script src="Portfolios_files/all"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            svs.init({});
+        });
+    </script>
+
+    
+
+    <script>
+        var pageData = {"AllAccounts":[{"Id":1840,"AccountName":null,"AccountTypeName":"SVS Online Trading Account","DisplayNameAndRef":"SVS Online Trading Account (3884)","AccountTypeCode":"EO","AccountTypeIsDealing":true,"Ref":"3884","Balance":14227.7100000000,"Value":5049.3104680800,"ViewableAccount":true,"ActivationUrl":null},{"Id":1849,"AccountName":null,"AccountTypeName":"SVS Online ISA Account","DisplayNameAndRef":"SVS Online ISA Account (3893)","AccountTypeCode":"XE","AccountTypeIsDealing":true,"Ref":"3893","Balance":9925.1600000000,"Value":5275.9088369600,"ViewableAccount":true,"ActivationUrl":null}],"Value":10325.2193050400,"Balance":24152.8700000000,"TotalValue":34478.0893050400,"Salutation":" MR CHRISTOPHER TVR","PromotionalText":"","ShowPromoDiv":false,"IndexFeeds":[{"BidPrice":0.0000000000,"ChangeToday":6.8400000000,"ChangeTodayPerc":0.1016172595,"HighPrice":6765.0100000000,"ID":0,"LowPrice":6718.5300000000,"MidPrice":6737.9800000000,"Name":"FTSE 100","Time":"\/Date(1417018710000)\/","Type":"index","Value":"UKX","ChartSrc":"/trading/ChartHandler.ashx?c=MN7xV6Mv7sTxtz4DlXNivNwfbJfsonT1pYOSSga1Tv30KD6TDqwKG9JlS45E6aqY"},{"BidPrice":0.0000000000,"ChangeToday":-39.0700000000,"ChangeTodayPerc":-0.2467856906,"HighPrice":15842.4400000000,"ID":0,"LowPrice":15771.9800000000,"MidPrice":15792.4800000000,"Name":"FTSE 250","Time":"\/Date(1417018711000)\/","Type":"index","Value":"MCX","ChartSrc":"/trading/ChartHandler.ashx?c=W7b6GRTmocNXCYS04StjzNwfbJfsonT1pYOSSga1Tv30KD6TDqwKG9JlS45E6aqY"}],"NewsFeeds":[{"Abstract":"","Article":"MIning stocks were leading the risers on the FTSE 100 on Wednesday, rebounding after recent declines. Antofagasta topped the list, rising 3.7%, with peers Anglo American, Fresnillo and Randgold also registering decent gains.\u003cbr /\u003eBT Group was continuing to rise after saying that it was in talks with various companies about buying their UK mobile phone networks. It had previously announced it was in discussions with Telefonica, which owns O2, though Deutsche Telekom and Orange confirmed they are also in talks with BT about selling their EE joint venture.\u003cbr /\u003e\u003cbr /\u003ePossible industry consolidation surrounding BT, which already runs broadband and TV operations, has also prompted speculation that other companies could look to combine operations. There were renewed rumours that Vodafone could approach Sky with a possible takeover offer or look to expand their partnership, sending shares in both firms higher.\u003cbr /\u003e\u003cbr /\u003eTUI Travel was the worst performer as the stock was dampened by a sharp plunge in the share price of FTSE 250 peer Thomas Cook as it announced the surprise exit of its chief executive.\u003cbr /\u003e\u003cbr /\u003eWeak market conditions throughout Europe put gross margins under pressure at Wolseley, with shares in the plumbing and heating products distributor edging lower despite profits still managing to rise in the first quarter.\u003cbr /\u003e\u003cbr /\u003eCatering group Compass underwhelmed with its annual results, with the stock in the red after a 10.5% increase in the dividend and a 5.4% rise in full-year profits. Analysts at The Share Centre said the results were \"solid\" but the stock\u0027s valuation is \"full\".\u003cbr /\u003e\u003cbr /\u003eAlso lower was United Utilities despite half-year results showing modest improvements in revenues and profits. The water company expressed confidence about the forthcoming new regulatory pricing structure after submitting a plan for lower prices.\u003cbr /\u003e\u003cbr /\u003e \u003cbr /\u003e\u003cbr /\u003eFTSE 100 - Risers\u003cbr /\u003eAntofagasta (ANTO) 760.50p +3.68%\u003cbr /\u003eKingfisher (KGF) 298.10p +2.33%\u003cbr /\u003eBT Group (BT.A) 405.00p +2.32%\u003cbr /\u003eSports Direct International (SPD) 640.00p +1.67%\u003cbr /\u003eHargreaves Lansdown (HL.) 983.50p +1.60%\u003cbr /\u003eAnglo American (AAL) 1,350.50p +1.58%\u003cbr /\u003eSSE (SSE) 1,605.00p +1.58%\u003cbr /\u003eFresnillo (FRES) 757.00p +1.27%\u003cbr /\u003eRandgold Resources Ltd. (RRS) 4,479.00p +1.15%\u003cbr /\u003eDirect Line Insurance Group (DLG) 290.40p +1.04%\u003cbr /\u003e\u003cbr /\u003eFTSE 100 - Fallers\u003cbr /\u003eTUI Travel (TT.) 419.60p -1.62%\u003cbr /\u003eSmith \u0026 Nephew (SN.) 1,109.00p -1.25%\u003cbr /\u003eCompass Group (CPG) 1,062.00p -1.12%\u003cbr /\u003eWeir Group (WEIR) 2,051.00p -1.11%\u003cbr /\u003eGKN (GKN) 336.70p -1.06%\u003cbr /\u003eAberdeen Asset Management (ADN) 453.00p -1.03%\u003cbr /\u003eSainsbury (J) (SBRY) 239.00p -0.99%\u003cbr /\u003eRoyal Mail (RMG) 422.60p -0.94%\u003cbr /\u003eCRH (CRH) 1,477.00p -0.94%\u003cbr /\u003eMondi (MNDI) 1,070.00p -0.93%","ArticleDate":"\/Date(1417015787000)\/","ArticleRef":"22264475","ByLine":"","Id":1847,"Introduction":"MIning stocks were leading the risers on the FTSE 100 on Wednesday, rebounding after recent declines. Antofagasta topped the list, rising 3.7%, with peers Anglo American, Fresnillo and Randgold also registering decent gains.","NewsLink":"http://www.DigitalLook.com","Title":"FTSE 100 movers: Mining and telecom stocks on the rise"},{"Abstract":"","Article":"\u003cbr /\u003eThe sale of six properties and gains from asset appreciation strongly boosted First Property Group\u0027s pre-tax profit in the first half of 2014, although the AIM-listed company said opportunities in the UK were becoming less plentiful.\u003cbr /\u003e\u003cbr /\u003eThe firm said that its pre-tax profit for the six months to the end of September rose from £1.9m to £5.4m, largely thanks to performance fees earned from its fund management business.\u003cbr /\u003e\u003cbr /\u003eTwo separate investments, carried out in the second half of 2013, boosted pre-tax profit by an additional £585,000, the group said, adding it had made £1.3m profit on the acquisition and refinancing of three properties in Romania.\u003cbr /\u003e\u003cbr /\u003eOn the outlook for commercial property, the company said the rate of GDP growth in the UK \"would appear to be moderating but it is still growing faster than most of Europe and at a faster rate than was expected a year ago\", with growth for 2014 expected to be around 3%, dropping to 2.7% in 2015.\u003cbr /\u003e\u003cbr /\u003eThe firm lifted its interim dividend by 6.1% to 0.35p per share.\u003cbr /\u003e\u003cbr /\u003e \u003cbr /\u003e\u003cbr /\u003eNostrum Oil \u0026 Gas said its revenue in the nine to the end of September fell because of a decline in oil prices.\u003cbr /\u003e\u003cbr /\u003eThe London-listed company said its average daily production for the nine months to September 30 was 45,204 barrels of oil equivalent per day, above its targeted average of 45,000.\u003cbr /\u003e\u003cbr /\u003eRevenue fell from $657.2m (£418.3m) to $620.3m because of the falling oil price, while earnings before income, taxation, depreciation and amortisation rose slightly from $412m to $413.2m.","ArticleDate":"\/Date(1417014322000)\/","ArticleRef":"22264191","ByLine":"","Id":1839,"Introduction":"","NewsLink":"http://www.DigitalLook.com","Title":"Results Round-up"},{"Abstract":"","Article":"US stocks were largely unchanged on Wednesday, as the number of jobless claims rose for the first time since September and orders for durable goods increased.\u003cbr /\u003eJust before 10:00 in New York, the Dow Jones Industrial Average was 0.09% down, while the S\u0026P 500 rose 0.02% and the Nasdaq fell 0.2%.\u003cbr /\u003e\u003cbr /\u003eAccording to figures released by the US Department of Commerce, orders for durable goods increased by 0.4% month-on-month in October to $243.8bn, beating consensus estimate of a 0.6% drop.\u003cbr /\u003e\u003cbr /\u003eSeptember\u0027s figure was revised upward to show a drop of 0.9% month-on-month, instead of the 1.1% initially estimated, while durable goods orders have risen 7.5% year-on-year.\u003cbr /\u003e\u003cbr /\u003eMeanwhile, the core personal consumption index (CPI), the Federal Reserve\u0027s preferred measure of inflation, came in at 1.4% year-on-year, as expected, although the core measure ticked higher to 1.6%.\u003cbr /\u003e\u003cbr /\u003e\"Inflation has become a hot topic this year and is likely to continue to be in 2015, although the US seems to be suffering far less from low inflation than many of the other major nations,\" said Craig Erlam, analyst at Alpari UK.\u003cbr /\u003e\u003cbr /\u003e\"The latest reading is expected to pick up slightly from October\u0027s 1.5% reading, which would be in keeping with the CPI and PPI inflation readings, both of which showed an improvement when released last week.\"\u003cbr /\u003e\u003cbr /\u003eMeanwhile, the latest jobless claims report jumped to an 11-week high, topping the 300,000 mark for the first time since early September.\u003cbr /\u003e\u003cbr /\u003eThe number of people who applied for new unemployment benefits jumped 21,000 to 313,000 in the week ended 22 November, exceeding the 288,000 estimate.\u003cbr /\u003e\u003cbr /\u003eIn corporate news, Hewlett-Packard rose almost 3% despite reporting fourth quarter sales that missed estimates, while Deere \u0026 Co slid after revealing its 2015 profit will be $1.9bn rather than $2.2bn as originally estimated.\u003cbr /\u003e\u003cbr /\u003eHertz Global Holdings fell slightly, after Icahn Associates increased its stake in the car rental company to about 11% from 8.7% at the end of September.\u003cbr /\u003e\u003cbr /\u003eThe dollar fell against the pound, the yen and the euro, while gold futures slid marginally to $1.197.10.\u003cbr /\u003e\u003cbr /\u003eThe yield on the 10-year US Treasury note dropped two basis points to 2.24%, while the yield on the 30-year note declined by the same margin to 2.94% and the yield on the five-year Treasuries fell one basis point to 1.56%.\u003cbr /\u003e\u003cbr /\u003eThe prices of oil continue to tumble, with Brent crude losing almost a percentage point to $77.6 a barrel, while West Texas intermediate fell to $73.6 a barrel, after losing over 0.6%.","ArticleDate":"\/Date(1417013778000)\/","ArticleRef":"22264180","ByLine":"","Id":1838,"Introduction":"US stocks were largely unchanged on Wednesday, as the number of jobless claims rose for the first time since September and orders for durable goods increased.","NewsLink":"http://www.DigitalLook.com","Title":"US open: Markets largely unchanged after slightly disappointing economic data"},{"Abstract":"","Article":"Continuing bid speculation pushed stocks in the telecoms sector higher on Wednesday with heavyweights BT and Vodafone both on the rise.\u003cbr /\u003eBT, up 2.4% by late afternoon, was extending recent gains after it was confirmed that the fixed-line telecoms provider was in talks with at least two groups about buying their UK mobile phone networks.\u003cbr /\u003e\u003cbr /\u003eWhile BT had previously announced it was in discussions with Telefonica, which owns O2, Deutsche Telekom and Orange confirmed on Wednesday that they were also in talks with the group about selling their EE joint venture.\u003cbr /\u003e\u003cbr /\u003eAnalysts estimated that EE could potentially be worth £10bn.\u003cbr /\u003e\u003cbr /\u003eNumerous other rumours surround the sector, including that Vodafone may acquire TalkTalk or may merge with Sky or may merge with Liberty Global, or that Sky may buy a UK mobile operator, though Sky and Vodafone are already in a trial partnership in a quad-play deal.\u003cbr /\u003e\u003cbr /\u003eAs broker Charles Stanley said, these \"are not new ideas, but are being resuscitated\".\u003cbr /\u003e\u003cbr /\u003eNevertheless, analyst Tom Gidley-Kitchin said BT\u0027s confirmation that it was in discussions has \"generated speculation over whether a deal might happen and, more significantly, about whether it trigger off further, reactive mergers\".\u003cbr /\u003e\u003cbr /\u003eHe said: \"Most national telecom markets are seeing a process of convergence, whereby telecom companies are offering, and customers are looking for, a combined bundle of (some or all of) fixed, mobile, broadband and TV services.\"\u003cbr /\u003e\u003cbr /\u003eRegarding Vodafone, whose shares were up 1%, Gidley-Kitchin said an acquisition of Sky would be a \"very large move\" for the group and could cause a number of competition issues.\u003cbr /\u003e\u003cbr /\u003e\"However, an enhanced partnership with Sky could be mutually beneficial and not necessarily anti-competitive,\" he said.\u003cbr /\u003e\u003cbr /\u003e \u003cbr /\u003e\u003cbr /\u003eTop performing sectors so far today\u003cbr /\u003eFixed Line Telecommunications 4,608.73 +2.20%\u003cbr /\u003eElectricity 9,995.12 +1.12%\u003cbr /\u003eMobile Telecommunications 5,086.81 +0.66%\u003cbr /\u003eFood Producers \u0026 Processors 8,113.76 +0.60%\u003cbr /\u003eGeneral Retailers 2,831.26 +0.33%\u003cbr /\u003e\u003cbr /\u003eBottom performing sectors so far today\u003cbr /\u003eIndustrial Metals \u0026 Mining 1,513.13 -6.75%\u003cbr /\u003eAutomobiles \u0026 Parts 7,858.24 -1.23%\u003cbr /\u003eTravel \u0026 Leisure 7,649.59 -1.14%\u003cbr /\u003eForestry \u0026 Paper 11,514.58 -1.02%\u003cbr /\u003eOil Equipment, Services \u0026 Distribution 20,031.11 -0.77%","ArticleDate":"\/Date(1417012018000)\/","ArticleRef":"22264468","ByLine":"","Id":1845,"Introduction":"Continuing bid speculation pushed stocks in the telecoms sector higher on Wednesday with heavyweights BT and Vodafone both on the rise.","NewsLink":"http://www.DigitalLook.com","Title":"Sector movers: M\u0026A hopes lift telecoms as BT and Vodafone gain"},{"Abstract":"","Article":"Shares in Thomas Cook plummeted by over 19% as it announced that chief executive Harriet Green has stepped down after just over two years in charge of the troubled travel group. Green, who is due to be replaced by chief operating officer Peter Fankhauser with immediate effect, claimed her turnaround \"was complete\" as annual results showed improving profits from all divisions.\u003cbr /\u003eAlso falling was Britvic, who identified upcoming fierce competition between retailers in Britain, Ireland and France as a source of pressure on prices and sales growth. The company acknowledged that the soft drinks market has been hurt by changing tastes and budgets and that a decline in revenue was inevitable.\u003cbr /\u003e\u003cbr /\u003eJD Sports Fashion rose further after saying on Tuesday it was selling its Bank Fashion business to a subsidiary of Hilco Capital - a move thought to result in a substantial recovery of its inter-company loan.\u003cbr /\u003e\u003cbr /\u003eProperty group Rightmove\u0027s prices took a hit as concerns continue to rise about new competitor Agents\u0027 Mutual launching early next year. Investec downgraded Rightmove from \u0027hold\u0027 to \u0027sell\u0027, saying that the launch of Agents\u0027 Mutual \"could cause some trading turbulence, not helped by a tougher near-term housing market\".\u003cbr /\u003e\u003cbr /\u003eBalfour Beatty share prices continued to surge, marking the stock\u0027s biggest two-day rise in five years. The company has also been highly commended at the Project of the Year awards by the Civil Engineering Contractors\u0027 Association. Accelerating US business and £1bn portfolio of public-private partnerships are thought to be responsible for the boost in prices.\u003cbr /\u003e\u003cbr /\u003eNostrum Oil \u0026 Gas rose despite a fall in revenue in the first nine months of the year, which was attributed to declining oil prices. However, production figures sat above target and operating profits rose slightly. The group\u0027s chief executive Kai-Uwe Kessel said: \"We continue to progress with our development programme, to double production by the end of 2016, which will allow us to further unlock the significant value of Nostrum\u0027s reserve base.\"\u003cbr /\u003e\u003cbr /\u003e \u003cbr /\u003e\u003cbr /\u003eRisers\u003cbr /\u003eZoopla Property Group (WI) (ZPLA) 190.40p +6.61%\u003cbr /\u003ePayPoint (PAY) 971.00p +4.92%\u003cbr /\u003eBalfour Beatty (BBY) 185.40p +4.86%\u003cbr /\u003eAO World (AO.) 227.30p +4.60%\u003cbr /\u003eNostrum Oil \u0026 Gas (NOG) 653.00p +3.40%\u003cbr /\u003eIntermediate Capital Group (ICP) 471.90p +3.33%\u003cbr /\u003eJD Sports Fashion (JD.) 480.00p +3.00%\u003cbr /\u003eDe La Rue (DLAR) 569.50p +2.89%\u003cbr /\u003eBrewin Dolphin Holdings (BRW) 272.10p +2.41%\u003cbr /\u003eKaz Minerals (KAZ) 253.40p +2.34%\u003cbr /\u003e\u003cbr /\u003eFallers\u003cbr /\u003eThomas Cook Group (TCG) 111.90p -18.85%\u003cbr /\u003eEvraz (EVR) 152.70p -6.09%\u003cbr /\u003eBritvic (BVIC) 660.50p -5.17%\u003cbr /\u003eFoxtons Group (FOXT) 149.10p -4.73%\u003cbr /\u003eQinetiQ Group (QQ.) 196.80p -4.51%\u003cbr /\u003eRightmove (RMV) 2,167.00p -3.39%\u003cbr /\u003eAfren (AFR) 64.90p -3.35%\u003cbr /\u003eHunting (HTG) 665.50p -3.06%\u003cbr /\u003eTelecom Plus (TEP) 1,222.00p -2.86%\u003cbr /\u003eMitchells \u0026 Butlers (MAB) 366.10p -2.66%","ArticleDate":"\/Date(1417011939000)\/","ArticleRef":"22264419","ByLine":"","Id":1843,"Introduction":"Shares in Thomas Cook plummeted by over 19% as it announced that chief executive Harriet Green has stepped down after just over two years in charge of the troubled travel group. Green, who is due to be replaced by chief operating officer Peter Fankhauser with immediate effect, claimed her turnaround \"was complete\" as annual results showed improving profits from all divisions.","NewsLink":"http://www.DigitalLook.com","Title":"FTSE 250 Movers: Thomas Cook plummets as CEO steps down"}],"SelectedAccount":null,"Accounts":[{"Id":1840,"AccountName":null,"AccountTypeName":"SVS Online Trading Account","DisplayNameAndRef":"SVS Online Trading Account (3884)","AccountTypeCode":"EO","AccountTypeIsDealing":true,"Ref":"3884","Balance":14227.7100000000,"Value":5049.3104680800,"ViewableAccount":true,"ActivationUrl":null},{"Id":1849,"AccountName":null,"AccountTypeName":"SVS Online ISA Account","DisplayNameAndRef":"SVS Online ISA Account (3893)","AccountTypeCode":"XE","AccountTypeIsDealing":true,"Ref":"3893","Balance":9925.1600000000,"Value":5275.9088369600,"ViewableAccount":true,"ActivationUrl":null}],"ClientSalutation":"Hi, MR CHRISTOPHER TVR"};
+
+    </script>
+    <script src="Portfolios_files/accountsummary"></script>
+    <script src="nav.js"></script>
+
+
+    
+
+
+</body></html>
