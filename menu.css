@@ -32,7 +32,7 @@
   nav.menu a {
     font-weight: 300;
     color: #242a34;
-  
+	
   }
 
   button.close-menu {
@@ -50,7 +50,7 @@
   nav.push-menu-left,
   nav.push-menu-right {
     top: 0;
-    width: 300px;
+    width: 270px;
     height: 100%;
   }
 
